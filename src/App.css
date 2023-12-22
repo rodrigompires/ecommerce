@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Estilo e animação do Menu */
+
+.closeMenu {
+    transition: all .8s ease-in-out;
+    transform: translateX(-100%);
+    opacity: 1;
+}
+
+.openMenu {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all .8s ease-in-out;
+}
+
+/*--------------- Fim ---------------------*/
+
+
+
+/* Abertura do modal do carrinho */
+
+.modalCart {
+    transform: translateY(-310px);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.open {
+    transition: all .5s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*--------------- Fim ---------------------*/
+
+
+/* Abertura do Modal e estilos gerais */
+
+.modal {
+    z-index: 1000;
+}
+.box {
+    transform-style: preserve-3d;
+}
+
+.card {
+    
+    border: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 25px 45px rgba(255,255,255,0.4);
+    transform-style: preserve-3d;
+}
+
+.elements {
+    box-shadow: 0 25px 45px rgba(255,255,255,0.4);
+}
+
+.tb0 {
+    transform: translateZ(0px);
+    transition: all 0.5s;
+    opacity: 0;
+    transition-delay: 0.20s;
+}
+
+.tb1 {
+    transform: translateZ(0px);
+    transition: all 0.5s;
+    opacity: 0;
+    transition-delay: 0.45s;
+}
+
+.tb2 {
+    transform: translateZ(0px);
+    transition: all 0.5s;
+    opacity: 0;
+    transition-delay: 0.75s;
+}
+
+.tb3 {
+    transform: translateZ(0px);
+    transition: all 0.5s;
+    opacity: 0;
+    transition-delay: 0.90s;
+    box-shadow: 0 25px 45px rgba(255,255,255,0.4);
+
+}
+
+.name {
+    transform: translateZ(300px);
+    background-color: transparent;
+    transition: all 0.5s;
+    opacity: 0;
+    transition-delay: 1.15s;
+}
+
+.box:hover .name {
+    top: 135px;
+    opacity: 1;
+}
+
+.box:hover .tb0 {
+    left: -10px;
+    opacity: 1;
+    transform: translateZ(80px);
+}
+
+.box:hover .tb1 {
+    right: 60px;
+    opacity: 1;
+    transform: translateZ(120px);
+}
+
+.box:hover .tb2 {
+    bottom: 5rem;
+    opacity: 1;
+    transform: translateZ(200px);
+}
+
+.box:hover .tb3 {
+    bottom: 10px;
+    opacity: 1;
+    transform: translateZ(250px);
+}
+
+/*--------------- Fim ---------------------*/
